@@ -1,5 +1,5 @@
 .navbar{
-    background-color: red;
+    background-color: #181b2c;
     height: 40px;
 }
 .logo{
@@ -11,7 +11,7 @@
     color: white;
     text-decoration: none;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+
 }
 #heading{
     margin-left: 20px;
