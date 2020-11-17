@@ -1,0 +1,145 @@
+#container-1 h1{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    color: white;
+}
+#container-1 p{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    color: white;
+    width: 80%;
+    text-align: justify;
+}
+#how h3{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top:100px;
+    margin-left: 30px;
+    color: white;
+}
+#how h4{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top:100px;
+    margin-left: 30px;
+    color: white;
+}
+#how h5{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top:-10px;
+    color: white;
+}
+#how p {
+    font-weight: 50;
+    width: 80%;
+    position: relative;
+    top:100px;
+    color: white;
+    text-align: justify;
+}
+#how img{
+    width: 100%;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px;
+    position: relative;
+    top: 150px;
+    margin: auto;
+}
+.buttons{
+    padding: 20px;
+}
+#button1{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px 0 15px 0;
+    background-color: #fff;
+}
+#button2{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px 0 15px 0;
+    background-color: #fff;
+}
+#button3{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px 0 15px 0;
+    background-color: #fff;
+}
+#tag1{
+    position: relative;
+    top: 100px;
+    width: fit-content;
+    padding: 30px;
+}
+#tag2{
+    position: relative;
+    top: 100px;
+    width: fit-content;
+    padding: 30px;
+}
+#tag3{
+    position: relative;
+    top: 100px;
+    width: fit-content;
+    padding: 30px;
+}
+#tag4{
+    position: relative;
+    top: 100px;
+    width: fit-content;
+    padding: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(odd){
+      color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+#table{
+    position: relative;
+    top: 120px;
+    width: 90%;
+    margin: auto;
+}  
+footer{
+    position: relative;
+    top: 194px;
+    color: white;
+    height: 100px;
+    
+}
+#footer{
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    top: 50px;
+}

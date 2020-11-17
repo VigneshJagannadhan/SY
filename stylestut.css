@@ -1,0 +1,108 @@
+body{
+    background-color: #181b2c;;
+}
+#container-1 h1{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    color: white;
+}
+#container-1 p{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    color: white;
+    width: 80%;
+}
+#what h3{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top:100px;
+    margin: auto;
+    color: white;
+}
+#how h3{
+    font-weight: 50;
+    width: fit-content;
+    position: relative;
+    top:100px;
+    margin-left: 30px;
+    color: white;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px;
+    position: relative;
+    top: 150px;
+    margin: auto;
+}
+.buttons{
+    padding: 20px;
+}
+#button1{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px 0 15px 0;
+    font-weight: bolder;
+    letter-spacing:6px;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+#button2{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing:6px;
+    border-radius: 15px 0 15px 0;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+#button3{
+    outline: none;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing:6px;
+    border-radius: 15px 0 15px 0;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+footer{
+    position: relative;
+    top: 170px;
+    color: white;
+    height: 50px;
+}
+#footer{
+    margin: auto;
+    width: fit-content;
+}
+#logos{
+
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+#logo{
+    width: 150px;
+    height:150px;
+    position: relative;
+    top: 40px;
+    
+}
