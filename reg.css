@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-  }
-  
+
   /* Style inputs */
   input[type=text], select, textarea {
     width: 100%;
@@ -28,11 +25,12 @@
   }
   
   /* Style the container/contact section */
-  .container {
+  .container-1 {
     color: white;
     background-color: #181b2c;
     padding: 10px;
     font-weight: 100;
+    width: 100%;
   }
   
   /* Create two columns that float next to eachother */
