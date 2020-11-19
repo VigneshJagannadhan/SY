@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Register for our course today!</h2>
+          <p>The Social_Yard Tutorials</p>
+        </div>
+        <div class="row">
+          
+          <div class="column">
+            <form id="submit-form" action="">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name..">
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="email" placeholder="Your last name..">
+              <label for="country">Choose your course</label>
+              <select id="country" name="color">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="column">
+            <img src="LOGO (1).jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <footer style="background-color: #181b2c; color: white; padding: 20px; text-align: center; border-top:1px solid  white;">
+          <p>© Social Yard. All rights reserved.</p>
+      </footer>
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzrUPlSFEp8ah72YUy9KOtjLiqrsZGsco_Vcx71Kw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    setInterval(function(){location.href="tutorials.html";return false;},3000);
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>

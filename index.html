@@ -34,7 +34,7 @@
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="careers.html">CAREERS</a></li>
-        <li><a href="tutorials.html">Social_yard Tutorials</a></li>
+        <li><a href="tutorialregistration.html">Social_yard Tutorials</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -142,16 +142,16 @@
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        <img src="iotsg.png" alt="New York" width="400" height="300">
+        <p style="color: black;"></p>><strong>IoT Based SmartGrid</strong></p>
+        <a href="https://iotbsgemsupport.info/">Visit IoTSG Official Page</a>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="asset.jpg" alt="San Francisco" width="400" height="300">
+        <p style="color: black;"></p>><strong>ASSET</strong></p>
+        <a href="https://iotbsgemsupport.info/">Visit IoTSG Official Page</a>
       </div>
     </div>
   </div><br> <br>
@@ -257,7 +257,7 @@
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
+<!-- Container (Contact Section) 
 <div id="contact" class="container-fluid bg">
   <h2 class="text-center bg">CONTACT</h2>
   <div class="row">
@@ -285,10 +285,40 @@
       </div>
     </div>
   </div>
+</div>-->
+
+<div class="container-11">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    
+    <div class="column">
+      <form id="submit-form" action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="email" placeholder="Your email..">
+        <label for="lname">Phone</label>
+        <input type="text" id="lname" name="color" placeholder="Your phone number..">
+<!--            <label for="country">Country</label>  
+          <select id="country" name="color">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>-->
+        <label for="subject">Message</label>
+        <textarea id="subject" name="message" placeholder="Ask us anything.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <img src="LOGO WT.jpg" style="width:100%">
+    </div>
+  </div>
 </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
@@ -332,6 +362,24 @@ $(document).ready(function(){
     });
   });
 })
+
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbyKiaVqTEuqVWweM21UlWPyL1nZIhKVnAWZfHWj/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Your message has been sent to us successfully. We will contact you asap.")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
 </script>
 
 </body>

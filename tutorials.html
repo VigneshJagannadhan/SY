@@ -9,11 +9,7 @@
     <title>Social_Yard Tutorial</title>
 </head>
 <body>
-    <div id="progressbar"></div>
-    <div id="scrollpath"></div>
-    <section>
-    
-        <div id="container-1">
+    <div id="container-1">
         <h1>Welcome to the Social_Yard tutorial</h1>
         <div id="what"><h3>What do you want to learn?</h3></div>
         <div class="button">
@@ -25,23 +21,10 @@
     <div id="logos">
         <img id="logo" src="logoimg.png" alt="">
     </div>
-
-
-    
     <footer>
         <div id="footer">
             <p>© Social Yard. All rights reserved.</p>
         </div>
     </footer>
-</section>
-    <script>
-        let progress = document.getElementById('progressbar');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function(){
-            let progressHeight  = (window.pageYOffset / totalHeight) * 100;
-            progress.style.height = progressHeight + "%";
-}
-    </script>
-
 </body>
 </html>
