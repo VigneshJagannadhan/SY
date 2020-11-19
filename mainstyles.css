@@ -213,10 +213,12 @@ body {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    background: linear-gradient(to left,#269dff,#0059ff);
+    border-radius: 15px;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background: linear-gradient(to left,#ff0000,#0059ff);
   }
   
   /* Style the container/contact section */
@@ -247,4 +249,8 @@ body {
       width: 100%;
       margin-top: 0;
     }
+  }
+  .port{
+    color: black;
+    font-weight: bolder;
   }
